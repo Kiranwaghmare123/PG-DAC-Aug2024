@@ -199,3 +199,75 @@ void middlepoint()
 	}
 	System.out.println("Mid element: "+ptr1.data);
 	
+Detect a Loop in Linkedlist:
+-----------------------------
+
+boolean detectLoop(Node head)
+{
+	Node slow=head, fast=head;
+	while(fast != null && fast.next != null)
+	{
+		slow=slow.next;
+		fast=fast.next.next;
+		if(slow == fast)
+			return true;
+	}
+	return false;
+	
+}
+
+
+Merge two sorted linked list:
+-------------------------------
+
+Node merge(Node l1, Node l2)
+{
+	if (l1 == null)
+		return l2;
+	if (l2 == null)
+		return l1;
+	
+	if(l1.data < l2.data)
+	{
+		l1.next = merge(l1.next, l2);
+		return l1;
+	}
+	else{
+		l2.next = merge(l1, l2.next);
+		return l2;
+	}
+}
+---------------------------------------------
+
+Doubly Linked List:
+-------------------
+
+class Node{
+	
+	int data;
+	Node prev;
+	Node next;
+	
+	Node (int d)
+	{
+		data = d;
+		prev=next=null;
+	}
+	
+}
+
+DLL Operations:
+--------------------
+1. Insertion:
+ 1.1 Insertion at the beginning:
+ 
+ void insert(int new_data){
+	 Node new_node = new Node(new_data);
+	 new_node.next = head;
+	 new_node.prev = null;
+	 if(head != null)
+		 head.prev = new_node;
+	 
+	 head = new_node;
+	 
+ }
