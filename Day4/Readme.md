@@ -79,6 +79,7 @@
     	
     3. Double-Ended Queue (Deque)
     	-It is a generalized version of a queue that allows insertion and deletion of elements from both ends.
+![image](https://github.com/user-attachments/assets/e3924c71-f98f-4c59-bcee-705efbc917ef)
 	
 ### Types:
 
@@ -149,7 +150,9 @@
     -----------
     	-Graph algorithms (Prims Algorithm, Krushkals Algorithms)
     	-Data compression(Huffman's coding)
-	
+### Time Complexity
+![image](https://github.com/user-attachments/assets/daf4903b-bd83-446c-b3bb-f4022dab6aa7)
+
 ### Heap:
 ----
     -A special form of complete binary tree that key value of each node is smaller(larger) than the key value of it's children.
@@ -174,3 +177,7 @@
     1. Insertion
     2. Deletion
     3. Heapify
+
+### Time Complexity
+
+![image](https://github.com/user-attachments/assets/aedf66f2-d138-41ac-8e09-9c138bb30d61)
