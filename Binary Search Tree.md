@@ -169,56 +169,8 @@ These trees keep the height of the tree in check to ensure O(log n) complexity.
 
 ---
 
-### Conclusion:
-- **Binary Search Trees** are a crucial data structure for efficient searching, insertion, and deletion.
-- They provide a structured way to maintain sorted data, but care must be taken to keep the tree balanced to avoid degraded performance.
-
----
 ### Time and Space Complexity of Binary Search Tree (BST) Operations
 
-Below are the time and space complexities for various operations in a Binary Search Tree, both in the **average case** (for balanced BSTs) and the **worst case** (for unbalanced BSTs).
-
----
-
-### 1. **Insertion**
-- **Time Complexity**:
-  - **Average Case**: O(log n)  
-    In a balanced BST, the depth of the tree is log(n), and each insertion operation requires traversing from the root to a leaf node.
-  - **Worst Case**: O(n)  
-    In an unbalanced BST (e.g., when inserting elements in increasing or decreasing order), the tree degenerates into a linked list, and insertion requires traversing n nodes.
-
-- **Space Complexity**:
-  - O(1) (without considering the recursion stack)
-  - O(log n) or O(n) (considering the recursion stack)
-    The recursive function call stack could go as deep as the height of the tree.
-
----
-
-### 2. **Searching**
-- **Time Complexity**:
-  - **Average Case**: O(log n)  
-    In a balanced BST, the height of the tree is log(n), so searching for an element requires log(n) comparisons.
-  - **Worst Case**: O(n)  
-    In an unbalanced BST, searching could require traversing all nodes, similar to a linked list.
-
-- **Space Complexity**:
-  - O(1) (without recursion)
-  - O(log n) or O(n) (with recursion)
-
----
-
-### 3. **Deletion**
-- **Time Complexity**:
-  - **Average Case**: O(log n)  
-    In a balanced BST, deletion requires finding the node to delete and potentially restructuring the tree, both of which take logarithmic time.
-  - **Worst Case**: O(n)  
-    In an unbalanced BST, deletion can be as slow as O(n) if the tree has degenerated into a linked list.
-
-- **Space Complexity**:
-  - O(1) (without recursion)
-  - O(log n) or O(n) (with recursion)
-
----
 
 ### 4. **Inorder/Preorder/Postorder Traversal**
 - **Time Complexity**: O(n)  
